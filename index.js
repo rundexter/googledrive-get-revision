@@ -68,7 +68,6 @@ module.exports = {
         // set credential
         google.options({ auth: auth });
         service.revisions.get(inputs, function (error, data) {
-            console.log(data);
             if (error)
                 this.fail(error);
              else
